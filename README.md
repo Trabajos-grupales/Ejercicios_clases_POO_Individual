@@ -25,11 +25,17 @@ Enunciado: en esta misma clase Palindromo, añada un atributo que se inicializar
 Comportamiento esperado:
 
 p = Palindromo("radar") 
+
 print(p.test()) 
+
 ->->-> True 
+
 p = Palindromo("sonar") 
+
 ->->-> RADAR 
+
 print(p.test()) 
+
 ->->-> False 
 
 SONAR 
