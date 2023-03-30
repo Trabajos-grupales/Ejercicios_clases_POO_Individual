@@ -1,3 +1,7 @@
 --Start log--
-1: Hola
-2: Adiós
+Primera llamada
+2a llamada
+3a llamada
+4a llamada
+5a llamada
+--End log: 5 log(s)--
