@@ -20,4 +20,14 @@ print(Palindromo.esPalindromo('L O L'))
 
 class Palindromo:
 
-    
+    def esPalindromo(cadena):
+        principio = 0
+        final = len(cadena)
+
+        while cadena[principio] == cadena[final]:
+            if principio >= final:
+                return True
+            principio += 1
+            final -= 1
+        return False
+
