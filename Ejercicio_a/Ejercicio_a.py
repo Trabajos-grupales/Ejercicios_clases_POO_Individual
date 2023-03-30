@@ -21,8 +21,8 @@ print(Palindromo.esPalindromo('L O L'))
 class Palindromo:
 
     def esPalindromo(cadena):
-        principio = 0
-        final = len(cadena)
+        principio = 0 # posición inicial que irá avanzando mientras sean iguales los caracteres
+        final = len(cadena) # longitud de la cadena de caracetres
 
         while cadena[principio] == cadena[final]:
             if principio >= final:
@@ -31,3 +31,9 @@ class Palindromo:
             final -= 1
         return False
 
+print(Palindromo.esPalindromo('radar'))
+print(Palindromo.esPalindromo('sonar'))
+print(Palindromo.esPalindromo('Arde ya la yedra'))
+print(Palindromo.esPalindromo('Ardeyalayedra'))
+print(Palindromo.esPalindromo('!@#$% %$#@!'))
+print(Palindromo.esPalindromo('L O L'))
