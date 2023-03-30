@@ -8,17 +8,17 @@ Enunciado: crear una clase Palindromo que contenga un método de clase esPalindr
 Comportamiento esperado:
 
 print(Palindromo.esPalindromo('radar')) 
->>> True 
+->->-> True 
 print(Palindromo.esPalindromo('sonar')) 
->>> False 
+->->-> False 
 print(Palindromo.esPalindromo('Arde ya la yedra')) 
->>> False 
+->->-> False 
 print(Palindromo.esPalindromo('Ardeyalayedra')) 
->>> True 
+->->-> True 
 print(Palindromo.esPalindromo('!@#$% %$#@!')) 
->>> True 
+->->-> True 
 print(Palindromo.esPalindromo('L O L')) 
->>> True 
+->->-> True 
 ## b. Palíndromo - método de instancia
 Enunciado: en esta misma clase Palindromo, añada un atributo que se inicializará en el constructor. Añada también un método test() que pruebe si el atributo de la instancia es un palíndromo. Además, al destruir la instancia, muestre el atributo en mayúsculas.
 
