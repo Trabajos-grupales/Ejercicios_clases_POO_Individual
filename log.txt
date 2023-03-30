@@ -1,0 +1,3 @@
+--Start log--
+1: Hola
+2: Adiós
