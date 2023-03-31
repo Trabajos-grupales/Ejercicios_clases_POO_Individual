@@ -28,3 +28,9 @@ class Palindromo:
             principio += 1
             final -= 1
         return False
+
+
+    def __del__ (self): #método destructor
+        print(self.cadena.upper()) # .upper() convierte a mayúsculas
+
+        
