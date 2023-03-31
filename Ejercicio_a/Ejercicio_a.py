@@ -19,12 +19,16 @@ print(Palindromo.esPalindromo('L O L'))
 '''''''''''''''''
 
 class Palindromo:
+    def __init__(self, cadena):
+        self.cadena = cadena
 
-    def esPalindromo(cadena):
+    @classmethod
+    def esPalindromo(cls, cadena):
         principio = 0 # posición inicial que irá avanzando mientras sean iguales los caracteres
         final = len(cadena) # longitud de la cadena de caracetres
+        cadena = cadena.lower() # convierte a minúsculas
 
-        while cadena[principio] == cadena[final]:
+        while cadena == cadena[::-1]:
             if principio >= final:
                 return True
             principio += 1
