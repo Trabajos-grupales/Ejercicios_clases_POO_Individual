@@ -19,10 +19,13 @@ class Palindromo:
     def __init__(self, cadena):
         self.cadena = cadena
 
+    @classmethod
     def test(self):
         principio = 0
         final = len(self.cadena)
-        while self.cadena[principio] == self.cadena[final]:
+        self.cadena = self.cadena.lower()
+
+        while self.cadena == self.cadena[::-1]:
             if principio >= final:
                 return True
             principio += 1
