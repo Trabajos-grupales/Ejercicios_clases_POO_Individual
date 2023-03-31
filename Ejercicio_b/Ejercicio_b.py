@@ -33,4 +33,5 @@ class Palindromo:
     def __del__ (self): #método destructor
         print(self.cadena.upper()) # .upper() convierte a mayúsculas
 
-        
+p = Palindromo("radar")
+print(p.test())
