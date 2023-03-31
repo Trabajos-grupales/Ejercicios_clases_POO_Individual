@@ -18,4 +18,13 @@ Pregunta adicional: ¿por qué se muestra RADAR después de la instanciación Pa
 class Palindromo:
     def __init__(self, cadena):
         self.cadena = cadena
-        
+
+    def test(self):
+        principio = 0
+        final = len(self.cadena)
+        while self.cadena[principio] == self.cadena[final]:
+            if principio >= final:
+                return True
+            principio += 1
+            final -= 1
+        return False
